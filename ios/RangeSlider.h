@@ -30,18 +30,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL initialLowValueSet;
 @property BOOL initialHighValueSet;
 
-@property (nonatomic) float lineWidth;
-@property (nonatomic) float(nonatomic)  thumbRadius;
+@property float lineWidth;
+@property float thumbRadius;
 @property float thumbBorderWidth;
-(nonatomic) @property (nonatomic) float textSize;
-@property float labe(nonatomic) lBorderWidth;
-@property float (nonatomic) labelPadding;
+@property float textSize;
+@property float labelBorderWidth;
+@property float labelPadding;
 @property float labelBorderRadius;
-@property (nonatomic) float labelTailHeight(nonatomic) ;
+@property float labelTailHeight;
 @property float labelGapHeight;
 @property (nonatomic) NSString *textFormat;
-@property (nonatomic) NSString *labe(nonatomic) lStyle;
-@property (nonatomic) NSStr(nonatomic) ing *gravity;
+@property (nonatomic) NSString *labelStyle;
+@property (nonatomic) NSString *gravity;
 @property BOOL disabled;
 @property BOOL rangeEnabled;
 @property (nonatomic) NSString *valueType;
