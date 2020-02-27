@@ -431,6 +431,7 @@ NSDateFormatter *dateTimeFormatter;
         if(!_gradientPresent) {
             CGContextMoveToPoint(context, _thumbRadius, cy);
             CGContextAddLineToPoint(context, lowX, cy);
+            CGContextStrokePath(context);
         } else {
             //draw gradient
             CGContextSaveGState(context);
@@ -455,7 +456,7 @@ NSDateFormatter *dateTimeFormatter;
             CGContextRestoreGState(context);
         }
     }
-    //CGContextStrokePath(context); !!!!!!!!
+
     if (_thumbRadius > 0) {
         [thumbBorderColor setFill];
         CGContextAddArc(context, lowX, cy, _thumbRadius, 0, M_PI * 2, true);
