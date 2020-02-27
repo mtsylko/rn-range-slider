@@ -431,6 +431,7 @@ NSDateFormatter *dateTimeFormatter;
         if(!_gradientPresent) {
             CGContextMoveToPoint(context, _thumbRadius, cy);
             CGContextAddLineToPoint(context, lowX, cy);
+            CGContextStrokePath(context);
         } else {
             //draw gradient
             CGContextSaveGState(context);
