@@ -35,6 +35,7 @@ declare module "rn-range-slider" {
     onValueChanged?:
       | ((lowValue: number, highValue: number, fromUser: boolean) => void)
       | ((lowValue: Date, highValue: Date, fromUser: boolean) => void);
+    style: any;
   }
 
   export default class RangeSlider extends React.PureComponent<
